@@ -38,7 +38,7 @@ shinyServer(function(input, output) {
                 x<- speedsel()$PcntOfStockChampSpeed
                 bins <- seq(min(x), max(x), length.out = input$bins + 1)
                 # draw the histogram with the specified number of bins
-                hist(x, breaks = bins, col = 'blue', border = 'white',main="2018 stock champion speed benchmarking",xlab="Percentage of 2018 stock champion speed attained [%]", ylab="Number of cars for selected class", include.lowest = TRUE, right = FALSE, xlim=c(50,100),ylim = c(0,maxClassCount) )
+                hist(x, breaks = bins, col = 'blue', border = 'white',main="2018 stock champion speed benchmarking",xlab="Percentage of 2018 stock champion speed attained [%]", ylab="Number of cars for selected class", include.lowest = TRUE, right = FALSE, xlim=c(50,100))
                 output$selection <- renderText(input$SelectClass)
                 
                 
