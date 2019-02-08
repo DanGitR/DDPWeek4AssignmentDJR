@@ -14,7 +14,8 @@ library(dplyr)
 shinyServer(function(input, output) {
         
         #read data          
-        filePath <- "C:/DevelopingDataProducts/DDPWeek3AssignmentDJR/PWD2019Results.csv"  
+        #filePath <- "C:/DevelopingDataProducts/DDPWeek3AssignmentDJR/PWD2019Results.csv" 
+        filePath <- "https://raw.githubusercontent.com/DanGitR/DDPWeek4AssignmentDJR/master/PWD2019Results.csv"  
         pwdFile<-read.csv(filePath, header=TRUE, sep=",", dec=".")
         pwdFile<-select(pwdFile,PcntOfStockChampSpeed,Class)
         pwdFile<-mutate(pwdFile, Class=as.character(Class))
@@ -37,7 +38,7 @@ shinyServer(function(input, output) {
                 x<- speedsel()$PcntOfStockChampSpeed
                 bins <- seq(min(x), max(x), length.out = input$bins + 1)
                 # draw the histogram with the specified number of bins
-                hist(x, breaks = bins, col = 'blue', border = 'white',main="2018 stock champion speed benchmarking",xlab="Percentage of 2018 stock champion speed attained [%]", ylab="Number of cars for selected class", include.lowest = TRUE, right = FALSE, xlim=c(50,100),ylim = c(0,maxClassCount/2) )
+                hist(x, breaks = bins, col = 'blue', border = 'white',main="2018 stock champion speed benchmarking",xlab="Percentage of 2018 stock champion speed attained [%]", ylab="Number of cars for selected class", include.lowest = TRUE, right = FALSE, xlim=c(50,100),ylim = c(0,maxClassCount) )
                 output$selection <- renderText(input$SelectClass)
                 
                 
