@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Pinewood Derby Benchmarking App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Pinewood Derby Benchmarking App">
+  <meta name="author" content="DanGitR">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/PWDlogo.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>The Pinewood Derby Benchmarking App</h1>
+    <h2>How did your race results stack up against the 2018 Champion's results?</h2>
+    <p>DanGitR<br/>Peer Learner at DDP Class, Week4 February 2019</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>PWD Racing: Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Pinewood Derby (PWD) racing is very competitive!</li>
+<li>The difference between a good run and a championship run is slim.</li>
+<li>Scaled speed in miles per hour is the common metric used.</li>
+<li>The scaled speed for the 2018 stock champion was 236.4 scaled MPH.</li>
+</ul>
+
+<p><br()></p>
+
+<p>The scaled speed is calculated as follows:
+\[ \text{scaled speed} = \text{actual speed} * \frac{\text{full size car length}}{\text{PWD stock car length}}\]</p>
+
+<ul>
+<li>For a typical full size car length of approximately 180 inches, the scale factor ranges 25 and 27. </li>
+<li>For the PWD Benchmark App: \[ \text{scale factor}=\frac{180}{7} \].</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Percentage of Stock Champion Speed Metric</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The Benchmark metric used by the app is the Percentage of the 2018 Stock Champion scaled speed:</li>
+</ul>
+
+<p>\[ \text{Percentage Stock Champion Speed [%]} = 100*\frac{\text{your PWD car speed}}{\text{2018 Stock Champion Speed}} \]</p>
+
+<ul>
+<li>This metric provides a better sense about how cars in a particular event performed, compared to the 2018 champion&#39;s results.</li>
+<li>The difference between a car that wins a local race event and a national champion can be only a few percent!</li>
+<li>Don&#39;t be surprised if a majority of cars at a local event attain over 80% of the 2018 champion&#39;s speed.</li>
+<li>Outlaw class cars allow for some deviations for teh stock rules.For instance, more weight can be added. </li>
+<li>You should expect outlaw cars to attain higher speeds than stock cars, although some failed design concepts can be very slow.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Screenshot</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This is just a screen shot of the App: </li>
+</ul>
+
+<p><img src = './assets/img/PWDAppScreen.JPG' width="960"></img></p>
+
+<ul>
+<li>It shows a Benchmark histogram for the selected car class.<br></li>
+<li>You can select the number of bins on te histogram using a slider.</li>
+<li>You can also select to show results for the stock or outlaw cars in the sample data set.</li>
+<li>Sample data set was created for a local event (Pack 603, Sam Houston Council)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Links</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>If you want to test  the PWD Benchmarking App, I&#39;ve provided a link to a demo of it here:
+<a href="https://dangitr.shinyapps.io/week4shinyappdjr/">https://dangitr.shinyapps.io/week4shinyappdjr/</a>
+<br()></p></li>
+<li><p>Axle friction reduction, axle alignment, and CG placement are typical factors that are adressed to improve performance. Learn more here:
+<br()></p></li>
+<li><p><a href="http://www.pinewoodderbyphysics.com/lectures.shtml">http://www.pinewoodderbyphysics.com/lectures.shtml</a> </p></li>
+<li><p><a href="http://www.pinewoodphysics.com/">http://www.pinewoodphysics.com/</a> </p></li>
+<li><p><a href="http://www-cs-students.stanford.edu/%7Emdevine/pinewood/pinewood_derby.html">http://www-cs-students.stanford.edu/~mdevine/pinewood/pinewood_derby.html</a> </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='PWD Racing: Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Percentage of Stock Champion Speed Metric'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Screenshot'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Links'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
